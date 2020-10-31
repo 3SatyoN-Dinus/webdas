@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            font-family:'Times New Roman', Times, serif ;
+        }
+
+        header {
+            background-color: grey;
+            padding: 10px;
+            text-align: center;
+            font-size: 50px;
+            color: honeydew;
+        }
+
+        nav {
+            float: left;
+            width: 100%;
+            height: 100px;
+            background: lightgray;
+            padding: 5px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 30px;
+            width: 100%;
+            background-color: lightyellow;
+            height: 250px;
+        }
+        section:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: linen;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        @media(max-width: 600px) {
+            nav, article {
+                width: 100px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Layout</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero labore impedit harum totam itaque mollitia officiis ut. Repudiandae perspiciatis molestias dolorem excepturi nesciunt non illum provident autem soluta sit.</p>
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tentang kami</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto reiciendis amet fuga corrupti doloremque velit magnam qui. Neque, atque blanditiis. Animi, optio eos. Tempora architecto soluta quia saepe quae sunt!</p>
+        </article>
+    </section>
+
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>
